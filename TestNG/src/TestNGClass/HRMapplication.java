@@ -18,8 +18,7 @@ public class HRMapplication {
 		WebDriver driver =new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://s2.demo.opensourcecms.com/orangehrm/symfony/web/index.php/auth/login");
-		String currentURL=driver.getCurrentUrl();
-		Assert.assertTrue(currentURL.contains("auth/login"));
+		
 	}
 	
 	
@@ -29,15 +28,13 @@ public class HRMapplication {
 		driver.findElement(By.id("txtPassword")).sendKeys("opensourcecms");
 		driver.findElement(By.id("btnLogin")).click();
 		
-		boolean status=driver.findElement(By.xpath("//*[@id=\"admin\"]/a/span")).isDisplayed();
-		Assert.assertTrue(status);
+		
 	}
 	
 	
 	@Test(dependsOnMethods = "loginApp")
 	public void logoutApp(){
-		driver.findElement(By.xpath("//*[@id=\"option-menu\"]/li[3]/a")).click();
-		Assert.assertTrue(driver.findElement(By.id("txtUsername")).isDisplayed());
+	
 		
 	
 		

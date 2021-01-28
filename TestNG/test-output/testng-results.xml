@@ -2,20 +2,20 @@
 <testng-results total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-24T19:56:21Z" name="Default suite" finished-at="2021-01-24T19:56:26Z" duration-ms="4986">
+  <suite started-at="2021-01-27T01:56:53Z" name="Default suite" finished-at="2021-01-27T01:56:58Z" duration-ms="4795">
     <groups>
     </groups>
-    <test started-at="2021-01-24T19:56:21Z" name="Default test" finished-at="2021-01-24T19:56:26Z" duration-ms="4986">
+    <test started-at="2021-01-27T01:56:53Z" name="Default test" finished-at="2021-01-27T01:56:58Z" duration-ms="4795">
       <class name="TestNGClass.HRMapplication">
-        <test-method signature="startapp()[pri:0, instance:TestNGClass.HRMapplication@5456afaa]" started-at="2021-01-24T14:56:21Z" name="startapp" finished-at="2021-01-24T14:56:26Z" duration-ms="4948" status="PASS">
+        <test-method signature="startapp()[pri:0, instance:TestNGClass.HRMapplication@5456afaa]" started-at="2021-01-26T20:56:53Z" name="startapp" finished-at="2021-01-26T20:56:58Z" duration-ms="4762" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startapp -->
-        <test-method signature="loginApp()[pri:0, instance:TestNGClass.HRMapplication@5456afaa]" started-at="2021-01-24T14:56:26Z" name="loginApp" finished-at="2021-01-24T14:56:26Z" depends-on-methods="TestNGClass.HRMapplication.startapp" duration-ms="6" status="FAIL">
+        <test-method signature="loginApp()[pri:0, instance:TestNGClass.HRMapplication@5456afaa]" started-at="2021-01-26T20:56:58Z" name="loginApp" finished-at="2021-01-26T20:56:58Z" depends-on-methods="TestNGClass.HRMapplication.startapp" duration-ms="9" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at TestNGClass.HRMapplication.loginApp(HRMapplication.java:28)
+	at TestNGClass.HRMapplication.loginApp(HRMapplication.java:27)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -46,7 +46,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method signature="logoutApp()[pri:0, instance:TestNGClass.HRMapplication@5456afaa]" started-at="2021-01-24T14:56:26Z" name="logoutApp" finished-at="2021-01-24T14:56:26Z" depends-on-methods="TestNGClass.HRMapplication.loginApp" duration-ms="0" status="SKIP">
+        <test-method signature="logoutApp()[pri:0, instance:TestNGClass.HRMapplication@5456afaa]" started-at="2021-01-26T20:56:58Z" name="logoutApp" finished-at="2021-01-26T20:56:58Z" depends-on-methods="TestNGClass.HRMapplication.loginApp" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method HRMapplication.logoutApp()[pri:0, instance:TestNGClass.HRMapplication@5456afaa] depends on not successfully finished methods]]>
